@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pull Your Photocard</title>
+		<style>
+html, body {
+	text-align: center;
+}
+
+		</style>
+
+	</head>
+	<body>
+	<img id="bild" src="/Photocard-Picker/main.jpg" /><br></br>
+	<button id="button" onclick="myFunction()">Photocard Picker</button>
+	<p id="demo"></p>
+	
+		<script>
+		function myFunction() {
+			var bilder = [
+			    "/Photocard-Picker/1.jpg", "/Photocard-Picker/2.jpg", "/Photocard-Picker/3.jpg", "/Photocard-Picker/4.jpg", "/Photocard-Picker/5.jpg"," /Photocard-Picker/6.jpg", "/Photocard-Picker/7.jpg", "/Photocard-Picker/8.jpg", "/Photocard-Picker/9.jpg", "/Photocard-Picker/10.jpg", "/Photocard-Picker/11.jpg", "/Photocard-Picker/12.jpg", "/Photocard-Picker/13.jpg", "/Photocard-Picker/14.jpg", "/Photocard-Picker/15.jpg", "/Photocard-Picker/16.jpg", "/Photocard-Picker/17.jpg", "/Photocard-Picker/18.jpg"
+				]
+
+			var bild = document.getElementById("bild");
+			bild.src = bilder[Math.floor(Math.random() * bilder.length)];
+			}
+		</script>
+	</body>
+</html>
